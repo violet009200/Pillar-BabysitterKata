@@ -117,8 +117,13 @@ public class BabySitterTest {
 	@Test
 	public void shouldGetFamilyName() {
 		BabySitter familyA = new BabySitter(5,4,"A");
-		
 		assertEquals("A",familyA.getFamilyName());
+	}
+	
+	@Test
+	public void testForFamilyAwithNewConstructor() {
+		BabySitter familyA = new BabySitter(5,4,"A");
+		assertEquals(190,familyA.payAmountForFamilyA());
 	}
 
 }
