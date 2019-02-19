@@ -125,5 +125,11 @@ public class BabySitterTest {
 		BabySitter familyA = new BabySitter(5,4,"A");
 		assertEquals(190,familyA.payAmountForFamilyA());
 	}
+	
+	@Test
+	public void testForFamilyBwithNewConstructor() {
+		BabySitter familyB = new BabySitter(5,4,"B");
+		assertEquals(140,familyB.payAmountForFamilyB());
+	}
 
 }

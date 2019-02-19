@@ -86,5 +86,12 @@ public class BabySitter {
 		getPartialPayment(11, 4, 20);
 		return this.getTotalPay();
 	}
+	
+	public int payAmountForFamilyB() {
+		getPartialPayment(5, 10, 12);
+		getPartialPayment(10, 12, 8);
+		getPartialPayment(12, 4, 16);
+		return this.getTotalPay();
+	}
 
 }
