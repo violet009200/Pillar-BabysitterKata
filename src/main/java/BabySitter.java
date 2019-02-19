@@ -27,6 +27,9 @@ public class BabySitter {
 
 	}
 	
+	public int getHourRange(int startTime, int finishTime) {
+		return timeConverter(finishTime)-timeConverter(startTime);
+	}
 	
 	
 	/*public static void main(String[] args) {

@@ -36,4 +36,10 @@ public class BabySitterTest {
 	public void validateWorkHourRangeInput6And3ShouldReturnTrue() {
 		assertEquals(true,sitter.validateWorkHourRange(6, 3));
 	}
+	
+	@Test
+	public void getHourRangeInput5And11ShouldReturn6() {
+		assertEquals(6,sitter.getHourRange(5, 11));
+	}
+
 }
