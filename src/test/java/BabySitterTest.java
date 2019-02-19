@@ -113,5 +113,12 @@ public class BabySitterTest {
 		familyC.getPartialPayment(9, 4, 15);
 		assertEquals(189,familyC.getTotalPay());
 	}
+	
+	@Test
+	public void shouldGetFamilyName() {
+		BabySitter familyA = new BabySitter(5,4,"A");
+		
+		assertEquals("A",familyA.getFamilyName());
+	}
 
 }

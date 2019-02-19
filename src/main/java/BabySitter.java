@@ -9,7 +9,7 @@ public class BabySitter {
 	private int finishTime;
 	private boolean availability;
 	private int totalPay;
-	//private String familyName;
+	private String familyName;
 	
 	
 	public BabySitter() {
@@ -22,13 +22,13 @@ public class BabySitter {
 		this.availability = validateWorkHourRange(this.startTime, this.finishTime);
 	}
 	
-	/*
+	
 	public BabySitter(int startTime, int finishTime, String familyName) {
 		this.startTime = timeConverter(startTime);
 		this.finishTime = timeConverter(finishTime);
 		this.availability = validateWorkHourRange(this.startTime, this.finishTime);
 		this.familyName = familyName;
-	}*/
+	}
 	
 	public int getStartTime() {
 		return this.startTime;
@@ -46,9 +46,9 @@ public class BabySitter {
 		return this.totalPay;
 	}
 	
-/*	public String getFamilyName() {
+	public String getFamilyName() {
 		return this.familyName;
-	}*/
+	}
 	
 	//set 5PM to 0, 12AM to 7, 4AM to 11
 	public int timeConverter(int time) {
