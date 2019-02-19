@@ -65,6 +65,7 @@ public class BabySitter {
 		
 		int hours = getHourRange(startTime, endTime);
 		int partialPay = hours*payRate;
+		this.totalPay+=partialPay;
 		return partialPay;
 	}
 	

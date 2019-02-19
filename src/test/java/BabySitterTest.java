@@ -69,4 +69,10 @@ public class BabySitterTest {
 	public void shouldReturnAvailable() {
 		assertEquals(true,s.getAvailability());
 	}
+	
+	@Test
+	public void shouldgetTotalPayment() {
+		
+		assertEquals(s.getPartialPayment(11, 4, 20),s.getTotalPay());
+	}
 }
