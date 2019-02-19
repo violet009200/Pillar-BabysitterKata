@@ -93,4 +93,13 @@ public class BabySitterTest {
 		familyB.getPartialPayment(12, 4, 16);
 		assertEquals(140,familyB.getTotalPay());
 	}
+	
+	@Test
+	public void testForFamilyC() {
+		BabySitter familyC = new BabySitter(5,4);
+		familyC.getPartialPayment(5, 9, 21);
+		familyC.getPartialPayment(9, 4, 15);
+		assertEquals(189,familyC.getTotalPay());
+	}
+	
 }
