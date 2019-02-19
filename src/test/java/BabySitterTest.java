@@ -57,5 +57,10 @@ public class BabySitterTest {
 		BabySitter s = new BabySitter(11,4);
 		assertEquals(6,s.getStartTime());
 	}
-
+	
+	@Test
+	public void shouldReturnConvertedFinishTime() {
+		BabySitter s = new BabySitter(11,4);
+		assertEquals(11,s.getFinishTime());
+	}
 }
