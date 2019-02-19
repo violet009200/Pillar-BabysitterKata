@@ -41,5 +41,10 @@ public class BabySitterTest {
 	public void getHourRangeInput5And11ShouldReturn6() {
 		assertEquals(6,sitter.getHourRange(5, 11));
 	}
+	
+	@Test
+	public void getPartialPaymentInput5And11And15ShouldReturn90() {
+		assertEquals(90,sitter.getPartialPayment(5, 11, 15));
+	}
 
 }

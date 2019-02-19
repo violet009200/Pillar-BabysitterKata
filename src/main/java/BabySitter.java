@@ -31,6 +31,11 @@ public class BabySitter {
 		return timeConverter(finishTime)-timeConverter(startTime);
 	}
 	
+	public int getPartialPayment(int startTime, int endTime, int payRate) {
+		
+		int hours = getHourRange(startTime, endTime);
+		return hours*payRate;
+	}
 	
 	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
