@@ -7,7 +7,7 @@ public class BabySitter {
 	
 	private int startTime;
 	private int finishTime;
-	private boolean available;
+	private boolean availability;
 	private int totalPay;
 	
 	
@@ -18,7 +18,7 @@ public class BabySitter {
 	public BabySitter(int startTime, int finishTime) {
 		this.startTime = timeConverter(startTime);
 		this.finishTime = timeConverter(finishTime);
-		this.available = validateWorkHourRange(this.startTime, this.finishTime);
+		this.availability = validateWorkHourRange(this.startTime, this.finishTime);
 	}
 	
 	public int getStartTime() {
@@ -29,8 +29,8 @@ public class BabySitter {
 		return this.finishTime;
 	}
 
-	public boolean getAvailable() {
-		return this.available;
+	public boolean getAvailability() {
+		return this.availability;
 	}
 	
 	public int getTotalPay() {

@@ -6,10 +6,12 @@ import org.junit.Test;
 public class BabySitterTest {
 
 	private BabySitter sitter;
+	private BabySitter s;
 	
 	@Before
 	public void setUp(){
 		sitter = new BabySitter();
+		s = new BabySitter(11,4);
 	}
 	
 	@Test
@@ -54,13 +56,17 @@ public class BabySitterTest {
 	
 	@Test
 	public void shouldReturnConvertedStartTime() {
-		BabySitter s = new BabySitter(11,4);
+		
 		assertEquals(6,s.getStartTime());
 	}
 	
 	@Test
 	public void shouldReturnConvertedFinishTime() {
-		BabySitter s = new BabySitter(11,4);
 		assertEquals(11,s.getFinishTime());
+	}
+	
+	@Test
+	public void shouldReturnAvailable() {
+		assertEquals(true,s.getAvailability());
 	}
 }
