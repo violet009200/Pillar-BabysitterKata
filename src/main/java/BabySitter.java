@@ -93,5 +93,11 @@ public class BabySitter {
 		getPartialPayment(12, 4, 16);
 		return this.getTotalPay();
 	}
+	
+	public int payAmountForFamilyC() {
+		getPartialPayment(5, 9, 21);
+		getPartialPayment(9, 4, 15);
+		return this.getTotalPay();
+	}
 
 }
