@@ -10,7 +10,8 @@ public class BabySitter {
 	public int timeConverter(int time) {
 		if(time >= 5 && time <=12)
 			time-=5;
-
+		else
+			time+=7;
 		return time;
 	}
 	

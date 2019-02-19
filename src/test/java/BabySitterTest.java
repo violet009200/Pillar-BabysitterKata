@@ -17,4 +17,8 @@ public class BabySitterTest {
 		assertEquals(0,sitter.timeConverter(5));
 	}
 	
+	@Test
+	public void timeConverterTestInput1SholudReturn8() {
+		assertEquals(8,sitter.timeConverter(1));
+	}
 }
