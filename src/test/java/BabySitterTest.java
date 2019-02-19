@@ -114,6 +114,7 @@ public class BabySitterTest {
 		assertEquals(189,familyC.getTotalPay());
 	}
 	
+	
 	@Test
 	public void shouldGetFamilyName() {
 		BabySitter familyA = new BabySitter(5,4,"A");
@@ -123,20 +124,20 @@ public class BabySitterTest {
 	@Test
 	public void testForFamilyAwithNewConstructor() {
 		BabySitter familyA = new BabySitter(5,4,"A");
-		assertEquals(190,familyA.payAmountForFamilyA());
+		assertEquals(190,familyA.payAmountForFamily());
 	}
 	
 	@Test
 	public void testForFamilyBwithNewConstructor() {
 		BabySitter familyB = new BabySitter(5,4,"B");
-		assertEquals(140,familyB.payAmountForFamilyB());
+		assertEquals(140,familyB.payAmountForFamily());
 	}
 	
 	@Test
 	public void testForFamilyCwithNewConstructor() {
 		BabySitter familyC = new BabySitter(5,4,"C");
-		assertEquals(189,familyC.payAmountForFamilyC());
+		assertEquals(189,familyC.payAmountForFamily());
 	}
-	
+
 
 }

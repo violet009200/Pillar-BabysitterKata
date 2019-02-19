@@ -43,6 +43,7 @@ public class BabySitter {
 	}
 	
 	public int getTotalPay() {
+	
 		return this.totalPay;
 	}
 	
@@ -81,23 +82,26 @@ public class BabySitter {
 		return partialPay;
 	}
 	
-	public int payAmountForFamilyA() {
-		getPartialPayment(5, 11, 15);
-		getPartialPayment(11, 4, 20);
+	public int payAmountForFamily() {
+		
+		if(this.familyName.equals("A")) {
+			getPartialPayment(5, 11, 15);
+			getPartialPayment(11, 4, 20);
+		}
+		
+		else if(this.familyName.equals("B")) {
+			getPartialPayment(5, 10, 12);
+			getPartialPayment(10, 12, 8);
+			getPartialPayment(12, 4, 16);
+		}
+		
+		else if(this.familyName.equals("C")){
+			getPartialPayment(5, 9, 21);
+			getPartialPayment(9, 4, 15);
+		}
+		
 		return this.getTotalPay();
 	}
 	
-	public int payAmountForFamilyB() {
-		getPartialPayment(5, 10, 12);
-		getPartialPayment(10, 12, 8);
-		getPartialPayment(12, 4, 16);
-		return this.getTotalPay();
-	}
-	
-	public int payAmountForFamilyC() {
-		getPartialPayment(5, 9, 21);
-		getPartialPayment(9, 4, 15);
-		return this.getTotalPay();
-	}
 
 }
