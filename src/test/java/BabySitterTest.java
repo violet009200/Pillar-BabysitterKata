@@ -21,4 +21,9 @@ public class BabySitterTest {
 	public void timeConverterTestInput1SholudReturn8() {
 		assertEquals(8,sitter.timeConverter(1));
 	}
+	
+	@Test
+	public void validateWorkHourRangeInput4And2ShouldReturnFalse() {
+		assertEquals(false,sitter.validateWorkHourRange(4, 2));
+	}
 }

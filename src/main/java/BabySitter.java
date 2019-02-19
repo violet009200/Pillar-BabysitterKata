@@ -1,6 +1,8 @@
 
 public class BabySitter {
 
+	private final int BABYSITTER_STARTTIME = 0;
+	private final int BABYSITTER_FINISHTIME = 11;
 	
 	public BabySitter() {
 		
@@ -14,6 +16,18 @@ public class BabySitter {
 			time+=7;
 		return time;
 	}
+	
+	public boolean validateWorkHourRange(int startTime, int finishTime) {
+		startTime = timeConverter(startTime);
+		finishTime = timeConverter(finishTime);
+		
+		if(startTime < BABYSITTER_STARTTIME || finishTime> BABYSITTER_FINISHTIME) return false;
+		else if (startTime > finishTime) return false;
+		else return true;
+
+	}
+	
+	
 	
 	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
