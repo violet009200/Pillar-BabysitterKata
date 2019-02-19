@@ -1,8 +1,8 @@
 
 public class Family {
-	private String familyName;
-	private BabySitter sitter;
 	
+	private BabySitter sitter;
+	private String familyName;
 	
 	public Family(int startTime, int finishTime, String familyName) {
 		sitter = new BabySitter(startTime, finishTime);
@@ -10,8 +10,6 @@ public class Family {
 	}
 	
 	public String getFamilyName() {
-		return familyName;
+		return this.familyName;
 	}
-	
-	
 }

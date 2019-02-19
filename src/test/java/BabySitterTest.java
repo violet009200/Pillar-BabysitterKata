@@ -113,5 +113,5 @@ public class BabySitterTest {
 		familyC.getPartialPayment(9, 4, 15);
 		assertEquals(189,familyC.getTotalPay());
 	}
-	
+
 }
