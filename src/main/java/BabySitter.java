@@ -34,7 +34,8 @@ public class BabySitter {
 	public int getPartialPayment(int startTime, int endTime, int payRate) {
 		
 		int hours = getHourRange(startTime, endTime);
-		return hours*payRate;
+		int partialPay = hours*payRate;
+		return partialPay;
 	}
 	
 	/*public static void main(String[] args) {

@@ -46,5 +46,10 @@ public class BabySitterTest {
 	public void getPartialPaymentInput5And11And15ShouldReturn90() {
 		assertEquals(90,sitter.getPartialPayment(5, 11, 15));
 	}
+	
+	@Test
+	public void getPartialPaymentInput12And4And16ShouldReturn90() {
+		assertEquals(64,sitter.getPartialPayment(12, 4, 16));
+	}
 
 }
