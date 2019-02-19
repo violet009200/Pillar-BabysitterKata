@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BabySitterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-19T00:44:14" hostname="DESKTOP-ATMEA24" time="0.005">
+<testsuite name="BabySitterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-02-19T00:45:19" hostname="DESKTOP-ATMEA24" time="0.005">
   <properties/>
-  <testcase name="timeConverterTestInput1SholudReturn8" classname="BabySitterTest" time="0.003"/>
-  <testcase name="validateWorkHourRangeInput4And2ShouldReturnFalse" classname="BabySitterTest" time="0.0"/>
-  <testcase name="timeConverterTestInput5SholudReturnZero" classname="BabySitterTest" time="0.001"/>
+  <testcase name="validateWorkHourRangeInput6And3ShouldReturnTrue" classname="BabySitterTest" time="0.003"/>
+  <testcase name="timeConverterTestInput1SholudReturn8" classname="BabySitterTest" time="0.0"/>
+  <testcase name="validateWorkHourRangeInput4And2ShouldReturnFalse" classname="BabySitterTest" time="0.001"/>
+  <testcase name="validateWorkHourRangeInput2And9ShouldReturnFalse" classname="BabySitterTest" time="0.0"/>
+  <testcase name="timeConverterTestInput5SholudReturnZero" classname="BabySitterTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
