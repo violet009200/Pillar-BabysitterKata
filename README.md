@@ -1,4 +1,11 @@
 # Pillar-BabysitterKata
+How to Run:
+gradle test
+
+this program wiil take start time, finish time or start time, finish time, family name as input
+built test case for two types of constructor(with familyname and without familyname)
+
+
 
 Requirements
 The babysitter:
@@ -19,8 +26,3 @@ Deliverable:
 - Calculate total pay, based on babysitter start and end time, and a family.
 
 
-How to Run:
-gradle test
-
-this program wiil take start time, finish time or start time, finish time, family name as input
-built test case for two types of constructor(with familyname and without familyname)
