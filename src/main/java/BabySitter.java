@@ -68,10 +68,5 @@ public class BabySitter {
 		this.totalPay+=partialPay;
 		return partialPay;
 	}
-	
-	/*public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}*/
 
 }
