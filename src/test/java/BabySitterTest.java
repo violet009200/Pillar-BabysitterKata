@@ -51,5 +51,11 @@ public class BabySitterTest {
 	public void getPartialPaymentInput12And4And16ShouldReturn90() {
 		assertEquals(64,sitter.getPartialPayment(12, 4, 16));
 	}
+	
+	@Test
+	public void shouldReturnConvertedStartTime() {
+		BabySitter s = new BabySitter(11,4);
+		assertEquals(6,s.getStartTime());
+	}
 
 }

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BabySitterTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-02-19T00:53:04" hostname="DESKTOP-ATMEA24" time="0.006">
+<testsuite name="BabySitterTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-02-19T00:57:32" hostname="DESKTOP-ATMEA24" time="0.009">
   <properties/>
-  <testcase name="validateWorkHourRangeInput6And3ShouldReturnTrue" classname="BabySitterTest" time="0.002"/>
-  <testcase name="getHourRangeInput5And11ShouldReturn6" classname="BabySitterTest" time="0.0"/>
-  <testcase name="timeConverterTestInput1SholudReturn8" classname="BabySitterTest" time="0.0"/>
+  <testcase name="validateWorkHourRangeInput6And3ShouldReturnTrue" classname="BabySitterTest" time="0.004"/>
+  <testcase name="getHourRangeInput5And11ShouldReturn6" classname="BabySitterTest" time="0.001"/>
+  <testcase name="timeConverterTestInput1SholudReturn8" classname="BabySitterTest" time="0.001"/>
   <testcase name="validateWorkHourRangeInput4And2ShouldReturnFalse" classname="BabySitterTest" time="0.001"/>
-  <testcase name="getPartialPaymentInput5And11And15ShouldReturn90" classname="BabySitterTest" time="0.0"/>
-  <testcase name="validateWorkHourRangeInput2And9ShouldReturnFalse" classname="BabySitterTest" time="0.001"/>
+  <testcase name="getPartialPaymentInput12And4And16ShouldReturn90" classname="BabySitterTest" time="0.0"/>
+  <testcase name="getPartialPaymentInput5And11And15ShouldReturn90" classname="BabySitterTest" time="0.001"/>
+  <testcase name="shouldReturnConvertedStartTime" classname="BabySitterTest" time="0.0"/>
+  <testcase name="validateWorkHourRangeInput2And9ShouldReturnFalse" classname="BabySitterTest" time="0.0"/>
   <testcase name="timeConverterTestInput5SholudReturnZero" classname="BabySitterTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

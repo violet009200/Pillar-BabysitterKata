@@ -4,9 +4,39 @@ public class BabySitter {
 	private final int BABYSITTER_STARTTIME = 0;
 	private final int BABYSITTER_FINISHTIME = 11;
 	
+	
+	private int startTime;
+	private int finishTime;
+	private boolean available;
+	private int totalPay;
+	
+	
 	public BabySitter() {
 		
 	}
+	
+	public BabySitter(int startTime, int finishTime) {
+		this.startTime = timeConverter(startTime);
+		this.finishTime = timeConverter(finishTime);
+		this.available = validateWorkHourRange(this.startTime, this.finishTime);
+	}
+	
+	public int getStartTime() {
+		return this.startTime;
+	}
+	
+	public int getFinishTime() {
+		return this.finishTime;
+	}
+
+	public boolean getAvailable() {
+		return this.available;
+	}
+	
+	public int getTotalPay() {
+		return this.totalPay;
+	}
+	
 	
 	//set 5PM to zero 12AM to 7 4AM to 11
 	public int timeConverter(int time) {
