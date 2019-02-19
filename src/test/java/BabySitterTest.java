@@ -114,13 +114,14 @@ public class BabySitterTest {
 		assertEquals(189,familyC.getTotalPay());
 	}
 	
-	
+	//Test for getting family name
 	@Test
 	public void shouldGetFamilyName() {
 		BabySitter familyA = new BabySitter(5,4,"A");
 		assertEquals("A",familyA.getFamilyName());
 	}
 	
+	//Test for getting total amount of pay with start time, end time and name
 	@Test
 	public void testForFamilyAwithNewConstructor() {
 		BabySitter familyA = new BabySitter(5,4,"A");
